@@ -1,0 +1,143 @@
+.ex-1-square,
+.ex-2-square,
+.ex-3-square,
+.ex-4-square,
+.ex-5-square,
+.ex-6-img,
+.ex-7-img,
+.ex-8-img,
+.ex-9-img,{
+  transition: 2s;
+}
+
+.ex-1-square:hover{
+  background: red;
+}
+
+.ex-2-square:active{
+  width: 100%;
+}
+
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+.ex-4-square:hover{
+  background: inherit;
+}
+
+.ex-5-square:hover{
+  transform: scale(1.5);
+}
+
+.ex-5-square:active{
+  transform: scale(.5);
+}
+
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+.ex-7-img:hover{
+  filter: grayscale(1) opacity(0.4);
+}
+
+.ex-8-img:hover{
+  filter: hue-rotate(90deg) blur(2px);
+  border-radius: 10%;
+}
+
+.ex-9-img:hover{
+  transform: scale(1.5);
+  border-radius:10%;
+  filter: sepia(1) opacity(0.8);
+}
+
+.ex-10-icon{
+  animation: load 2s linear infinite;
+}
+
+@keyframes load {
+  0%{ transform: rotate(360deg); }
+}
+
+.ex-11-icon:hover{
+  animation: crazyload 2s linear;
+}
+
+@keyframes crazyload {
+  0%{ transform: rotate(0); }
+  75%{ transform: rotate(270deg);}
+  100%{ transform: rotate(0);}
+}
+
+.ex-12-button:hover .ex-12-top-white{
+  animation: topwhite 2s linear infinite;
+}
+
+@keyframes topwhite {
+  0%{ left: 0; }
+  50%{ left: calc(100% - 64px);}
+  100%{ left: 0;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: botwhite 2s linear infinite;
+}
+
+@keyframes botwhite {
+  0%{ right: 0; }
+  50%{ right: calc(100% - 64px);}
+  100%{ right: 0;}
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  animation: topwhiteex13 2.5s linear infinite alternate;
+
+}
+
+@keyframes topwhiteex13 {
+  0%{   left: 0;
+        top:-10px;
+  }
+  20%{  left: calc(100% - 32px);
+        top:-10px;
+  }
+  40%{  left: calc(100% - 32px);
+        top: 100%;
+  }
+  60% { left: -10px;
+        top: 100%;
+  }
+  80% { left: -10px;
+        top: -10px;
+  }
+  100% {  left: 0;
+          top:-10px;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: botwhiteex13 2.5s linear infinite alternate;
+
+}
+
+@keyframes botwhiteex13 {
+  0%{   right: 20%;
+        bottom:-10px;
+  }
+  20%{  right: calc(100% - 32px);
+        bottom:-10px;
+  }
+  40%{  right: calc(100% - 32px);
+        bottom: 100%;
+  }
+  60% { right: -10px;
+        bottom: 100%;
+  }
+  80% { right: -10px;
+        bottom: -10px;
+  }
+  100% {  right: 20%;
+          bottom:-10px;
+  }
+}
